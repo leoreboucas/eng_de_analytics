@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores de Desempenho</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Relatório de Indicadores de Performance da Northwind Traders</h1>
+        <h2>Análise de Faturamento, Produtos e Desempenho de Vendas</h2>
+        <h3>Analista: Leonardo Rebouças Almeida</h3>
+    </div>
+    <nav class="summary">
+        <h4>Sumário:</h4>
+        <ul class="sumary-list">
+            <li class="sumary-item">Introdução</li>
+            <li class="sumary-item">Metodologia</li>
+            <li class="sumary-item">Análise de Indicadores</li>
+            <li class="sumary-item">Conclusão</li>
+        </ul>
+    </nav>
+    <div class="introdution">
+        <h4>Introdução</h4>
+        <p>
+            A Northwind Traders é uma empresa especializada em produtos alimentícios, bebidas e utilidades domésticas. A empresa está buscando novos caminhos para melhorar o gerenciamento de pedidos e ter mais controle de suas finanças. Este relatório visa mapear os dados atuais da empresa e oferecer soluções baseadas nos indicadores de performance, com o objetivo de aumentar o ticket médio e reduzir o churn. 
+        </p>
+        <h4>Proposta</h4>
+        <p>
+            Foi solicitado para nossa empresa a fazer um relatório que faça esse mapeamento de dados e ofereça soluções baseado nessas indicações, com o objetivo de identificar oportunidades de aumentar o ticket médio e reduzir o churn.
+        </p>
+    </div>
+    <div class="methodology">
+        <h4>Metodologia</h4>
+        <p>
+           Para a realização desta análise, foram utilizadas planilhas fornecidas pela empresa, contendo dados sobre pedidos, produtos, funcionários, clientes, entre outros. A linguagem Python foi escolhida para o processamento dos dados, utilizando as bibliotecas Pandas para análise e Matplotlib para a criação dos gráficos.
+        </p>
+    </div>
+    <div class="indicators">
+        <h4>Faturamento total</h4>
+        <p>
+            O faturamento total da empresa é de aproximadamente R$ 1,3 milhão, conforme o relatório gerado a partir do cruzamento de dados das planilhas fornecidas.
+        </p>
+        <h4>Ticket Médio</h4>
+        <p>O ticket médio é de R$ 628,52. Este valor pode ser melhorado com as seguintes sugestões:</p>
+        <ul>
+            <li>Criação de promoções para produtos frequentemente comprados em grandes quantidades.</li>
+            <li>Atendimento mais eficiente.</li>
+            <li>Ampliação das vendas para o modelo de atacado com descontos aplicáveis.</li>
+            <li>Treinamento de vendedores.</li>
+            <li>Oferecer uma variedade maior de produtos, considerando as preferências regionais.</li>
+        </ul>
+        <h4>Produtos mais vendidos</h4>
+        <img src="images/best_sellers.png" alt="Produtos mais vendidos">
+
+        <p>Os produtos mais vendidos representam cerca de 30% do faturamento da empresa. Estratégias para melhorar essa estatística incluem:
+        </p>
+        <ul>
+            <li>Oferecer descontos para compras em grandes quantidades desses produtos.</li>
+            <li>Comprar produtos similares com valores mais acessíveis para atrair mais clientes.</li>
+        </ul>
+        <h4>Produtos menos vendidos</h4>
+        <img src="images/worst_sellers.png" alt="Produtos menos vendidos">
+
+        <p>Os produtos menos vendidos podem ter baixa demanda devido a fatores como alto valor, baixa qualidade ou pouca divulgação. Estratégias para melhorar as vendas incluem:</p>
+        <ul>
+            <li>Oferecer descontos.</li>
+            <li>Aumentar a divulgação dos benefícios desses produtos.</li>
+            <li>Alterar a posição dos produtos nos estabelecimentos.</li>
+        </ul>
+        <h4>Lifetime Value</h4>
+        <p>O LTV da empresa está em R$ 368.496,18, indicando o valor que o cliente em média está disposto a gastar na empresa ao longo de sua vida. Este número é promissor, considerando o faturamento total. Para aumentar o LTV, sugere-se:</p>
+        <ul>
+            <li>Angariar clientes fiéis oferecendo descontos conforme o tempo de compra.</li>
+            <li>Fazer isso de forma transparente para evitar conflitos com outros clientes.</li>
+        </ul>
+        <h4>
+            Faturamento por funcionário
+        </h4>
+        <img src="images/employees_revenue.png" alt="Faturamento dos funcionários">
+        <p>A análise do faturamento por funcionário não visa fomentar competição, mas entender as razões para as diferenças de vendas. Recomenda-se:
+        </p>
+        <ul>
+            <li>Oferecer treinamentos personalizados para fortalecer as habilidades de cada funcionário.</li>
+            <li>Envolver os funcionários na criação de um vínculo melhor entre eles.</li>
+        </ul>
+    </div>
+    <div class="conclusion">
+        <h4>Conclusão</h4>
+        <p>
+            Os indicadores mostram que a empresa tem bons números para uma pequena empresa, porém realmente a ideia de implementar ferramentas que controlem os dados da empresa de forma mais eficaz veio em boa hora.
+        </p>
+        <h4>Recomendações</h4>
+        <p>Para aproveitar ao máximo os insights obtidos e melhorar os resultados da empresa, recomenda-se:</p>
+        <ul>
+            <li>Promoções e Descontos Estratégicos: Implementar promoções para produtos de alta demanda e descontos por volume para aumentar o ticket médio.</li>
+            <li>Marketing e Divulgação: Melhorar a divulgação dos produtos menos vendidos, destacando seus benefícios e ajustando suas posições nos pontos de venda.</li>
+            <li>Fidelização de Clientes: Criar programas de fidelidade que recompensem os clientes pelo tempo de compra, incentivando repetição e aumentando o LTV.</li>
+            <li>Treinamento de Funcionários: Desenvolver programas de treinamento personalizados para os funcionários, focando em áreas de melhoria e promovendo um ambiente de colaboração.</li>
+            <li>Implementação de BI: Investir em ferramentas de BI, Python ou Excel para centralizar e analisar dados, proporcionando uma visão integrada que facilite a tomada de decisões.</li>
+        </ul>
+        <p>Implementando essas estratégias, a Northwind Traders estará bem posicionada para continuar seu crescimento e alcançar seus objetivos estratégicos de aumentar o ticket médio e reduzir o churn, solidificando ainda mais sua posição no mercado.</p>
+    </div>
+</body>
+</html>
