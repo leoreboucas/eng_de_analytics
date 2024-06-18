@@ -5,8 +5,6 @@ import seaborn as sns
 from components import top_sellers
 
 from components import top_sellers, total_revenue, average_tickets, lifetime_value, top_employees
-from imports import import_names as imp
-from presentation import presentation
 
 # Faturamento total
 
@@ -15,6 +13,7 @@ total_revenue.total_revenue()
 # # # TOP 3 mais vendidos
 
 better_products = top_sellers.best_sellers()
+print(better_products)
 plt.figure(figsize=(10, 10))
 sns.barplot(x=better_products['product_name'], y=better_products['Faturamento'])
 plt.title('Top 5 Produtos Mais Vendidos')
@@ -25,6 +24,7 @@ plt.show()
 # # # TOP 3 menos vendidos
 
 worst_products = top_sellers.worst_sellers()
+print(worst_products)
 plt.figure(figsize=(10, 10))
 sns.barplot(x=worst_products['product_name'], y=worst_products['Faturamento'])
 plt.title('Top 5 Produtos Menos Vendidos')
@@ -43,6 +43,7 @@ lifetime_value.ltv()
 # Empregados com melhores vendas
 
 employess_revenue = top_employees.top_employees()
+print(employess_revenue)
 full_name = employess_revenue['first_name'] + ' ' + employess_revenue['last_name']
 plt.figure(figsize=(10, 10))
 sns.barplot(x=full_name, y=employess_revenue['Faturamento'])

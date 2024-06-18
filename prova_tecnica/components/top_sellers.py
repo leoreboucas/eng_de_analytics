@@ -6,25 +6,25 @@ products = imp.products
 def best_sellers():
     order_details['Faturamento'] = order_details['unit_price'] * order_details['quantity']
 
-    faturamento_total = order_details.groupby('product_id').agg({'Faturamento': 'sum'}).reset_index()
+    total_revenue = order_details.groupby('product_id').agg({'Faturamento': 'sum'}).reset_index()
 
-    top3_faturamento = faturamento_total.sort_values(by='Faturamento', ascending=False).head(5)
+    top3_revenue = total_revenue.sort_values(by='Faturamento', ascending=False).head(5)
 
-    top3_faturamento_com_nomes = top3_faturamento.merge(products, on='product_id', how='left')
+    top3_revenue_with_names = top3_revenue.merge(products, on='product_id', how='left')
 
-    top3_faturamento_com_nomes = top3_faturamento_com_nomes[['product_name', 'Faturamento']]
+    top3_revenue_with_names = top3_revenue_with_names[['product_name', 'Faturamento']]
 
-    return top3_faturamento_com_nomes
+    return top3_revenue_with_names
 
 def worst_sellers():
     order_details['Faturamento'] = order_details['unit_price'] * order_details['quantity']
 
-    faturamento_total = order_details.groupby('product_id').agg({'Faturamento': 'sum'}).reset_index()
+    total_revenue = order_details.groupby('product_id').agg({'Faturamento': 'sum'}).reset_index()
 
-    top3_faturamento = faturamento_total.sort_values(by='Faturamento', ascending=True).head(5)
+    top3_revenue = total_revenue.sort_values(by='Faturamento', ascending=True).head(5)
 
-    top3_faturamento_com_nomes = top3_faturamento.merge(products, on='product_id', how='left')
+    top3_revenue_with_names = top3_revenue.merge(products, on='product_id', how='left')
 
-    top3_faturamento_com_nomes = top3_faturamento_com_nomes[['product_name', 'Faturamento']]
+    top3_revenue_with_names = top3_revenue_with_names[['product_name', 'Faturamento']]
 
-    return top3_faturamento_com_nomes
+    return top3_revenue_with_names
