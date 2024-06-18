@@ -15,3 +15,10 @@ seaborn (opcional, para gráficos avançados)
 Você pode instalar as bibliotecas necessárias utilizando o pip:
 
 pip install pandas matplotlib seaborn
+
+Passo a Passo para Visualizar e Executar o Código
+1. Clonar o Repositório
+Clone este repositório em seu ambiente local:
+
+git clone https://github.com/leoreboucas/eng_de_analytics.git
+cd prova_tecnica
